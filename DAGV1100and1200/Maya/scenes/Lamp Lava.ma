@@ -1,6 +1,6 @@
 //Maya ASCII 2027 scene
 //Name: Lamp Lava.ma
-//Last modified: Mon, Sep 28, 2026 12:57:32 PM
+//Last modified: Mon, Sep 28, 2026 02:38:06 PM
 //Codeset: 1252
 requires maya "2027";
 requires -nodeType "polyDisc" "modelingToolkit" "0.0.0.0";
@@ -13,19 +13,19 @@ fileInfo "product" "Maya 2027";
 fileInfo "version" "2027";
 fileInfo "cutIdentifier" "202607171511-52c21617ee";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "32583AC4-4472-8F76-8A0B-A69E31F208B8";
+fileInfo "UUID" "8458D5C1-4E1A-7062-C225-B18ED918E7BB";
 createNode transform -s -n "persp";
 	rename -uid "79FCA5B5-4557-2BF7-6880-299E103EF73B";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -12.723131080001426 19.234717606385455 9.9431714687706965 ;
-	setAttr ".r" -type "double3" -42.938352742005428 665.80000000033215 0 ;
+	setAttr ".t" -type "double3" 0.036349445233668121 63.386193259397594 59.258203508969025 ;
+	setAttr ".r" -type "double3" -45.338352742466348 718.99999999990405 2.9822242210657298e-16 ;
 	setAttr ".rp" -type "double3" -3.5527136788005009e-15 9.9920072216264089e-16 3.5527136788005009e-15 ;
 	setAttr ".rpt" -type "double3" 1.1912895363091094e-14 2.5345137922895098e-15 -2.2045524917833781e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "78A03DA3-4664-5D83-C5F7-D2BCB2045BC5";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 23.231124256202957;
+	setAttr ".coi" 84.323479980801835;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";

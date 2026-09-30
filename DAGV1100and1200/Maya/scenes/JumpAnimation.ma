@@ -1,6 +1,6 @@
 //Maya ASCII 2027 scene
-//Name: AnimationPage102-117Starter.ma
-//Last modified: Wed, Sep 30, 2026 04:17:27 PM
+//Name: JumpAnimation.ma
+//Last modified: Wed, Sep 30, 2026 04:20:11 PM
 //Codeset: 1252
 file -rdi 1 -ns "Ultimate_Walker_IK_v1_0_1" -rfn "Ultimate_Walker_IK_v1_0_1RN"
 		 -op "v=0;" -typ "mayaAscii" "/Users/anthonyromrell/GitRepos/Essentials/DAGV1100and1200/Maya//scenes/Rigs/Ultimate_Walker_IK_v1.0.1.ma";
@@ -18,18 +18,18 @@ fileInfo "product" "Maya 2027";
 fileInfo "version" "2027";
 fileInfo "cutIdentifier" "202607171511-52c21617ee";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "74DEB583-4942-D201-A328-53894FEE7DCC";
+fileInfo "UUID" "B7CD362A-476F-C8E9-DA48-2DA66C7CBA45";
 createNode transform -s -n "persp";
 	rename -uid "C9712CCD-754C-F86E-AD2A-73826B605734";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 39.272342520003974 13.650186816503526 -10.128985511216106 ;
+	setAttr ".t" -type "double3" 39.272342520002098 13.650186816502918 -10.128985511216028 ;
 	setAttr ".r" -type "double3" -18.000000000000561 92.399999999999949 -2.5444437451708134e-14 ;
 	setAttr ".rpt" -type "double3" 7.0738641789614869e-17 -1.7234578128625038e-16 2.4105087574991926e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "461DA5EF-F84A-C499-F69E-15ADE383DA43";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 40.755754890328923;
+	setAttr ".coi" 40.755754890327019;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -677,8 +677,8 @@ createNode animCurveTU -n "walker_lf_foot_ctrl_visibility";
 	setAttr ".kox[0]"  0;
 	setAttr ".koy[0]"  0;
 select -ne :time1;
-	setAttr ".o" 17;
-	setAttr ".unw" 17;
+	setAttr ".o" 25;
+	setAttr ".unw" 25;
 select -ne :hardwareRenderingGlobals;
 	setAttr ".otfna" -type "stringArray" 22 "NURBS Curves" "NURBS Surfaces" "Polygons" "Subdiv Surface" "Particles" "Particle Instance" "Fluids" "Strokes" "Image Planes" "UI" "Lights" "Cameras" "Locators" "Joints" "IK Handles" "Deformers" "Motion Trails" "Components" "Hair Systems" "Follicles" "Misc. UI" "Ornaments"  ;
 	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
@@ -821,4 +821,4 @@ connectAttr ":defaultArnoldDisplayDriver.msg" ":defaultArnoldRenderOptions.drive
 connectAttr ":defaultArnoldFilter.msg" ":defaultArnoldRenderOptions.filt";
 connectAttr ":defaultArnoldDriver.msg" ":defaultArnoldRenderOptions.drvr";
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
-// End of AnimationPage102-117Starter.ma
+// End of JumpAnimation.ma
